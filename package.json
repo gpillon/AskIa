@@ -16,10 +16,6 @@
   "contributes": {
     "commands": [
       {
-        "command": "askia.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "askia.generateK8s",
         "title": "AskIA: Generate Kubernetes File"
       },
