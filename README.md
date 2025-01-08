@@ -71,7 +71,7 @@ Just hit `Cmd+Shift+P` (or `Ctrl+Shift+P` if you're on Windows/Linux) and type:
 - `AskIA: Generate Kubernetes File` - For spawning new K8s manifests
 - `AskIA: Suggest K8s Modifications` - For tweaking existing ones
 
-# Ideas
+# 💡 Ideas
  - In the suggestion function, I think it could be optimized by upoload a context, with the k8s manifest...
 
 ## 🐛 Known Issues
@@ -94,10 +94,11 @@ Found a bug? Got a cool idea? Feel like making this even more awesome? Hit us up
 
 If something's not working right or you just want to chat about the extension, open an issue on GitHub. I don't bite! 
 
-## Disclaimer
+## 📝 Disclaimer
 
 **This extension is a proof of concept and is not meant to be used in production. It is a fun way to learn how to use LLMs and how to create a VS Code extension.** I'ts just a fun experiment, and my first VS Code extension.
 
 ---
 
 Made with 🍕 and ☕️ by developers who think AI should be fun!
+
