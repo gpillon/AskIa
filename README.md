@@ -20,7 +20,7 @@ It uses the OpenAI API to generate the completions.
 I tested with the following engines:
  - Podman AI (https://podman-ai.github.io/podman-ai/) - Model `ibm-granite-8b`
  - OpenAI (https://platform.openai.com/docs/guides/code-completion) - Model `gpt-3.5-turbo`
- - Ollama (https://ollama.ai/) - Model `ibm-granite-8b`
+ - Ollama (https://ollama.ai/) - Model `ibm-granite-8b` (read the Known Issues below, it's not working well)
 
 
 ## 🏃‍♂️ Getting Started
@@ -76,8 +76,9 @@ Just hit `Cmd+Shift+P` (or `Ctrl+Shift+P` if you're on Windows/Linux) and type:
 
 ## 🐛 Known Issues
 
-- Sometimes it gets too excited and generates more YAML than you need
+- Sometimes it gets too excited and generates more YAML than you need (An idea could be to enhance the `system` message to avoid this)
 - It might occasionally try to be too clever (I'm working on its ego)
+- Ollama: It looks not working well beause the `system` message is not evaluated.
 
 ## 🎉 What's New?
 
