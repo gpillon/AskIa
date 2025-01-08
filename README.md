@@ -55,12 +55,12 @@ To develop this extension, you need to have the following tools installed:
  
 ## ⚙️ Settings You Can Mess With
 
-Pop these in your VS Code settings:
+Pop these in your VS Code settings (ATM the `package.json`):
 
 ```json
 {
 "askia.apiKey": "your-super-secret-key",
-"askia.apiServer": "http://localhost:11434/v1",
+"askia.apiServer": "http://localhost:11434/v1", // or the local url from podman-ai
 "askia.model": "granite-8b"
 }
 ```
