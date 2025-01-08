@@ -1,6 +1,6 @@
 # 🤖 AskIA - Your K8s YAML AI Coding Buddy!
 
-Yo! Welcome to AskIA - the VS Code extension that's like having a super-smart AI friend helping you write code! 
+Yo! Welcome to AskIA - the VS Code extension that's like having a super-smart AI friend helping you write k8s manifests! 
 
 # 📚 Urgent TODOs
 
@@ -11,6 +11,7 @@ Yo! Welcome to AskIA - the VS Code extension that's like having a super-smart AI
 - 🚀 **K8s Magic**: Generate Kubernetes files by just describing what you want in plain English! Like "Hey, give me a nginx deployment with 3 replicas" - BOOM! Done!
 - 🛠️ **K8s Tweaker**: Need to modify your K8s files? Just tell it what you want to change and watch the magic happen
 - ✨ **Smart Code Completion**: Type a semicolon `:` and get AI-powered suggestions. It's like autocomplete on steroids!
+
 
 ## 📚 Engines & API
 
@@ -37,10 +38,20 @@ To develop this extension, you need to have the following tools installed:
  - Pnpm (Should work with npm or yarn, but i ♥ pnpm)
 
 ### 🫡 How ?
+ - Edit the package.json to use the engine you want, editing the `askia.apiServer` and `askia.model` fields (maybe there is a better way to do this...)
  - Run `pnpm install` (or `$YOUR_FAVORITE_PACKAGE_MANAGER install`) to install the dependencies.
  - Run `pnpm run watch` to start the extension in watch mode.
  - Open the file `src/extension.ts`.
  - Press `F5` to start debugging the extension.
+ - NOTE: you must have a opened workspace within the folder where you want to generate the k8s manifest.
+ - press `Cmd+Shift+P` and type `AskIA: Generate Kubernetes File`
+ - type `nginx deployment with 3 replicas and service`
+ - press enter
+ - you should see the a new file with the k8s manifest in the same folder
+ - now press `Cmd+Shift+P` and type `AskIA: Suggest K8s Modifications`
+ - type `add a volume to the nginx deployment`
+ - press enter
+ - you should see the k8s manifest in the file with the modifications
  
 ## ⚙️ Settings You Can Mess With
 
@@ -60,10 +71,13 @@ Just hit `Cmd+Shift+P` (or `Ctrl+Shift+P` if you're on Windows/Linux) and type:
 - `AskIA: Generate Kubernetes File` - For spawning new K8s manifests
 - `AskIA: Suggest K8s Modifications` - For tweaking existing ones
 
+# Ideas
+ - In the suggestion function, I think it could be optimized by upoload a context, with the k8s manifest...
+
 ## 🐛 Known Issues
 
 - Sometimes it gets too excited and generates more YAML than you need
-- It might occasionally try to be too clever (we're working on its ego)
+- It might occasionally try to be too clever (I'm working on its ego)
 
 ## 🎉 What's New?
 
@@ -78,7 +92,7 @@ Found a bug? Got a cool idea? Feel like making this even more awesome? Hit us up
 
 ## 📬 Need Help?
 
-If something's not working right or you just want to chat about the extension, open an issue on GitHub. We don't bite! 
+If something's not working right or you just want to chat about the extension, open an issue on GitHub. I don't bite! 
 
 ## Disclaimer
 
